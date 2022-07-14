@@ -17,7 +17,7 @@ fetch(channelEndpoint1)
 function showChannel(data){
     const imageLink = data.items[0].snippet.thumbnails.medium.url;
     const title = data.items[0].snippet.title;
-    const descriptions = data.items[0].snippet.descriptions;
+    const description = data.items[0].snippet.description;
     const videos = data.items[0].statistics.videoCount;
     const subscribers = data.items[0].statistics.subscriberCount;
     const views = data.items[0].statistics.viewCount;
@@ -28,7 +28,7 @@ function showChannel(data){
         <div class="col-md-6 mb-4">
             <ul>
                 <li class="list-group-item bg-danger text-white"><strong>채널명: ${title}</strong></li>
-                <li class="list-group-item">채널 소개: ${descriptions}</li>
+                <li class="list-group-item">채널 소개: ${description}</li>
                 <li class="list-group-item">영상 개수: ${numberWithCommas(videos)}</li>
                 <li class="list-group-item">구독자 수: ${numberWithCommas(subscribers)}</li>
                 <li class="list-group-item">시청 횟수: ${numberWithCommas(views)}</li>
