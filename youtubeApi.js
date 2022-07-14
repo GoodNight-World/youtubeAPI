@@ -2,7 +2,7 @@ const videoChannel = document.querySelector('#video-channel');
 const videoContainer = document.querySelector('#video-container');
 
 const apiKey = 'AIzaSyBCIkJBLEhT9eGipac7LWUqm7eanRVrO2I';
-const channelId = 'UClhPqabyOHBxJzMkQ7k-pxg'; //랄로
+const channelId = 'UCBkyj16n2snkRg1BAzpovXQ'; //우왁굳
 const channelEndpoint1 = `https://www.googleapis.com/youtube/v3/channels?key=${apiKey}&id=${channelId}&part=snippet,contentDetails,statistics`;
 
 fetch(channelEndpoint1)
